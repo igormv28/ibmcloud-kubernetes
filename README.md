@@ -74,11 +74,11 @@ _If you have a federated ID, use ibmcloud login --sso to get started._
 
 3. Get the command to set the environment variable and download the Kubernetes configuration files.
 
-`ibmcloud ks cluster-config gars`
+`ibmcloud ks cluster-config gars_disaster_recovery`
 
 4. Set the KUBECONFIG environment variable. Copy the output from the previous command and paste it in your terminal. The command output should look similar to the following.
 
-`export KUBECONFIG=/Users/$USER/.bluemix/plugins/container-service/clusters/gars/kube-config-hou02-gars.yml`
+`export KUBECONFIG=/Users/igor/.bluemix/plugins/container-service/clusters/gars_disaster_recovery/kube-config-hou02-gars_disaster_recovery.yml`
 
 Alternatively, you can directly download your kubeconfig files to manually configure the cluster context.
 
