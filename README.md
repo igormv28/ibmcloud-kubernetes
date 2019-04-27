@@ -86,5 +86,6 @@ Alternatively, you can directly download your kubeconfig files to manually confi
 
 `kubectl get nodes`
 
+6. Deploy to a Kubernetes services
 
-
+`kubectl run <service_name> --image=us.icr.io/<namespace>/simple-web:latest`
