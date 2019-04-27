@@ -1,6 +1,11 @@
 # ibmcloud-kubernetes
 Step by Step to deploy a Container into Kubernetes, IBM Cloud
 
+#### Summary
+- [X] [IBM Docker Registry Console](https://cloud.ibm.com/kubernetes/registry/main/images)
+- [X] [IBM Cloud Kubernetes](https://cloud.ibm.com/kubernetes/clusters)
+- [X] Design and Implement your App on IBM Cloud
+- [X] Scale your App on IBM Cloud
 
 ### Welcome!
 Let's get started by installing the needed CLIs, setting up your first private registry namespace, and pushing your first image.
