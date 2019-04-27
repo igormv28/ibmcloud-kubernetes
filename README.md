@@ -29,19 +29,23 @@ _If you have a federated ID, use ibmcloud login --sso to log in to the IBM Cloud
 
 `ibmcloud cr login`
 
-2. Pull a test image from Docker Hub.
+2. Push a test image from Docker Hub.
+
+`docker push yeasy/simple-web`
+
+3. Pull the test image from Docker Hub.
 
 `docker pull yeasy/simple-web`
 
-3. Choose a repository and tag by which you can identify the image. Use the same repository and tag for the rest of this Quick Start.
+4. Choose a repository and tag by which you can identify the image. Use the same repository and tag for the rest of this Quick Start.
 
 `docker tag yeasy/simple-web:latest us.icr.io/<my_namespace>/simple-web:latest`
 
-4. Push the image.
+5. Push the image.
 
 `docker push us.icr.io/<my_namespace>/simple-web:latest`
 
-5. Verify that your image is in your private registry.
+6. Verify that your image is in your private registry.
 
 `ibmcloud cr image-list`
 
