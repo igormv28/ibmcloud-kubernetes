@@ -7,7 +7,7 @@ Step by Step to deploy a Container into Kubernetes, IBM Cloud
 - [X] Design and Implement your App on IBM Cloud
 - [X] Scale your App on IBM Cloud
 
-### Welcome!
+### Welcome to IBM Registry Container
 Let's get started by installing the needed CLIs, setting up your first private registry namespace, and pushing your first image.
 
 ### Install, Set Up, and Log In
@@ -22,7 +22,6 @@ Let's get started by installing the needed CLIs, setting up your first private r
 4. Log in to your IBM Cloud account.
 
 `ibmcloud login -a https://cloud.ibm.com`
-
 _If you have a federated ID, use ibmcloud login --sso to log in to the IBM Cloud CLI._
 
 5. Choose a name for your first namespace, and create that namespace. Use this namespace for the rest of the Quick Start.
@@ -53,4 +52,39 @@ _If you have a federated ID, use ibmcloud login --sso to log in to the IBM Cloud
 6. Verify that your image is in your private registry.
 
 `ibmcloud cr image-list`
+
+### Welcome to IBM Cloud Kubernetes
+
+### Gain access to your cluster
+
+Prerequisites
+Download and install a few CLI tools and the Kubernetes Service plug-in.
+
+`curl -sL https://ibm.biz/idt-installer | bash`
+
+### Gain access to your cluster
+1. Log in to your IBM Cloud account.
+
+`ibmcloud login -a https://cloud.ibm.com`
+_If you have a federated ID, use ibmcloud login --sso to get started._
+
+2. Target the Kubernetes Service region in which you want to work.
+
+`ibmcloud ks region-set us-south`
+
+3. Get the command to set the environment variable and download the Kubernetes configuration files.
+
+`ibmcloud ks cluster-config gars`
+
+4. Set the KUBECONFIG environment variable. Copy the output from the previous command and paste it in your terminal. The command output should look similar to the following.
+
+`export KUBECONFIG=/Users/$USER/.bluemix/plugins/container-service/clusters/gars/kube-config-hou02-gars.yml`
+
+Alternatively, you can directly download your kubeconfig files to manually configure the cluster context.
+
+5. Verify that you can connect to your cluster by listing your worker nodes.
+
+`kubectl get nodes`
+
+
 
