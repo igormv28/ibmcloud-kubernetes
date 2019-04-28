@@ -83,3 +83,5 @@ Alternatively, you can directly download your kubeconfig files to manually confi
 6. Deploy to a Kubernetes services
 
 `kubectl run <service_name> --image=us.icr.io/<namespace>/commerce:lbcluster`
+
+
