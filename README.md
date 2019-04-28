@@ -62,7 +62,6 @@ Download and install a few CLI tools and the Kubernetes Service plug-in.
 
 `curl -sL https://ibm.biz/idt-installer | bash`
 
-### Gain access to your cluster
 1. Log in to your IBM Cloud account.
 
 `ibmcloud login -a https://cloud.ibm.com`
